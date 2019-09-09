@@ -39,7 +39,7 @@ export default class ChannelGrid extends Component {
                         padding: 15px;
                         grid-template-columns: repeat(
                             auto-fill,
-                            minmax(160px, 1fr)
+                            minmax(150px, 1fr)
                         );
                         color: black;
                     }

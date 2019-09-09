@@ -13760,7 +13760,7 @@ module.exports = routes().add("index").add("channel", "/:slug.:id", "channel").a
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!**********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fchannel&absolutePagePath=%2FUsers%2Fjulioramirezdefreitas%2FDesktop%2FNext%2Fpages%2Fchannel.js ***!
   \**********************************************************************************************************************************************/
@@ -13783,5 +13783,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=channel.js.map
