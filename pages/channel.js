@@ -5,13 +5,6 @@ import Layout from "../components/Layout";
 import PodcastItem from "../components/PodcastItem";
 
 export default class channel extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            openPodcast: null
-        };
-    }
-
     static async getInitialProps({ query, res }) {
         let idChannel = query.id;
 
@@ -56,16 +49,8 @@ export default class channel extends Component {
         }
     }
 
-    openPodcast = (event, podcast) => {
-        event.preventDefault();
-        this.setState({
-            openPodcast: podcast
-        });
-    };
-
     render() {
         const { channel, audiosClips, series, statusCode } = this.props;
-        const { openPodcast } = this.state;
 
         if (statusCode != 200) {
             return <Error statusCode={statusCode} />;
@@ -80,8 +65,6 @@ export default class channel extends Component {
                     }}
                 />
 
-                {openPodcast && <div>Hay un podcast abierto</div>}
-
                 <div className="information">
                     <div className="title">
                         <img src="/static/podcast-solid.svg" alt="podcasts" />
@@ -90,7 +73,7 @@ export default class channel extends Component {
 
                     <h2>Ultimos podcasts</h2>
                     {audiosClips.map(clip => {
-                        return <PodcastItem clip={clip} openPodcast={openPodcast} />;
+                        return <PodcastItem clip={clip} />;
                     })}
 
                     <h2>Series</h2>

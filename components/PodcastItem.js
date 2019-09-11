@@ -19,8 +19,9 @@ export default class PodcastItem extends Component {
                             slug: slug(clip.title),
                             id: clip.id
                         }}
+                        prefetch
                     >
-                        <a onClick={event => openPodcast(event, clip)}>
+                        <a>
                             <img src="/static/play-solid.svg" alt="play" />
                         </a>
                     </Link>
@@ -45,7 +46,13 @@ export default class PodcastItem extends Component {
 
                     .ultimosPodcasts .thumbnail {
                         display: flex;
+                        justify-content: center;
+                        align-content: center;
                         cursor: pointer;
+                    }
+
+                    .ultimosPodcasts .thumbnail a {
+                        display: inline-block;
                     }
                 `}</style>
             </div>
