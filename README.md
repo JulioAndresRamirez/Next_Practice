@@ -8,7 +8,6 @@
 
 > App de podcasts integrada con la API de AudioBoom para aprender Next.JS
 
-Actualmente se esta soluciando un problema que causa que los podcasts no se reproduzcan. El link del servicio se agrega en la brevedad.
 
 ![Captura de la App](./.readme-static/Frame.png)
 
